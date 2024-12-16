@@ -4,7 +4,6 @@
 
 $(document).ready(function () {
 	$(".dodajUkorpu").click(function () {
-		// console.log("test");
 
 		var trenutnaKorpa = localStorage.getItem("korpa");
 		var cena = $(this).attr("data-price");
@@ -15,8 +14,6 @@ $(document).ready(function () {
             ukupnaKorpa=cena;
         }
 
-		console.log(ukupnaKorpa);
-		// console.log(cena);
 		localStorage.setItem("korpa", ukupnaKorpa);
 	});
 });
